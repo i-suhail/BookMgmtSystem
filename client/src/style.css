@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.nav{
+    width: 100%;
+    height: 5.5%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(155, 114, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #56ff2c;
+    top:0;
+    left: 0;
+    position: fixed;
+}
+
+span{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.logo{
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.books{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+}
+
+.book{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.book p{
+    width: 70%;
+    font-size: 10px;
+}
+
+.book h2{
+    width: 78%;
+    font-size: 21px;
+}
+
+.cvrimg{
+    width: 220px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    background-color: rgb(143, 248, 213);
+}
+
+.update, .delete {
+    height: 26px;
+    width: 100px;
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+
+button a{
+    color: inherit;
+}
+
+.delete{
+    color: red;
+    border: 1px solid red;
+    transition: 0.5s;
+}
+
+.delete:hover {
+    border: none;
+    background-color: red;
+    color: #fff;
+}
+
+.update{
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    transition: 0.5s;
+}
+
+.update:hover {
+    text-decoration: none;
+    border: none;
+    background-color: blue;
+    color: #fff;
+}
+
+.adbtn {
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    background-color: #efe81d;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+}
+
+.adbtn:hover {
+    border: 2px solid #efe81d;
+    color: #5e5b00;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.adbtn a{
+
+    text-decoration: none;
+}
+.form {
+    height: 40%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.form input {
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.form button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #56ff2c;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
