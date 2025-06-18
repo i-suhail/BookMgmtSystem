@@ -22,7 +22,7 @@ To import default books into your MySQL database:
 ### Backend
 1. Navigate the backend directory:
     ```bash
-    cd frontend
+    cd backend
 
 2. Install dependencies:
    ```bash
